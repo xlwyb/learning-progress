@@ -2,12 +2,9 @@
 
 int main()
 {
-    float x;
-    printf ("Enter a floating-point value: ");
-    scanf ("%f", &x);
-    printf ("%f\n", x);
-    printf ("fixed-point notation: %f\n", x);
-    printf ("exponential notation: %e\n", x);
-    printf ("p potation: %a\n", x);
+    double year;
+    scanf ("%lf", &year);
+    printf("你的寿命：%d岁\n", (int)year );
+    printf ("人的一生有%le秒\n", year * 3.156e7);
     return 0;
 }
