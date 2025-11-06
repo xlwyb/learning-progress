@@ -13,5 +13,6 @@ int main()
         printf ("Enter a height in centimeterds (<=0 to quit): ");
         scanf ("%f", &height);
     }
+    printf ("bye");
     return 0;
 }
