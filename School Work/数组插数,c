@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[10];
+    for (int i=0;i<=8;i++) scanf ("%d", &arr[i]);
+    scanf ("%d", &arr[9]);
+    if (arr[0]<arr[8])
+    {
+        int num=arr[9];
+        int j=8;
+        while (arr[j]>num&&j>=0)
+        {
+            arr[j+1]=arr[j];
+            j--;
+        }
+        arr[j+1]=num;
+    }
+    if (arr[0]>arr[8])
+    {
+        int num = arr[9];
+        int j=8;
+        while (arr[j]<num&&j>=0)
+        {
+            arr[j+1]=arr[j];
+            j--;
+        }
+        arr[j+1]=num;
+    }
+    for (int n=0;n<10;n++) printf ("%d ", arr[n]);
+    return 0;
+}
